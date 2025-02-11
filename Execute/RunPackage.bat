@@ -1,0 +1,1 @@
+"C:\Program Files\Microsoft SQL Server\130\DTS\Binn\DTExec.exe" /File "D:\DataMigrateSIS\Execute\MigrateData.dtsx"
