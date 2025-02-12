@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="2/11/2025 9:10:43 AM"
+  DTS:CreationDate="2/12/2025 4:27:37 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="CHINHLV-D5"
   DTS:CreatorName="CHINHLV-D5\ChinhLV"
-  DTS:DTSID="{F5C86AB0-B45B-41B7-A306-E50344F204D5}"
+  DTS:DTSID="{B0AE0F72-7005-48BF-B26C-F5CD825690AC}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="1033"
-  DTS:ObjectName="MigrateData"
+  DTS:ObjectName="DataMigrate"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{85DCE3EE-B171-45C1-A692-91AC7117CA5D}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{FA7068E2-AD11-487F-8382-062ACFDA633B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[10.1.50.157.SYNC.sa]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{CDC28A88-22C9-4A84-9B70-3F9A73462B3B}"
+      DTS:DTSID="{82F5E672-2870-4616-9FA6-A3EF9F13D075}"
       DTS:ObjectName="10.1.50.157.SYNC.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Application Name=SSIS-MigrateData-{CDC28A88-22C9-4A84-9B70-3F9A73462B3B}10.1.50.157.SYNC.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Application Name=SSIS-DataMigrate-{82F5E672-2870-4616-9FA6-A3EF9F13D075}10.1.50.157.SYNC.sa;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdQbYbh49gkyNXxEkDDE9IQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABeyoeCEnACF34GapepvQTr/AhQ9593I5DkzEjqFkxwggAAAAAOgAAAAAIAACAAAABnUiJsX/rlBWtIlvc6LDPMRE9nRW2jfLeuOcj2SDgGICAAAAAJMIrxdUGlbXnhtBuBV/bTUfYymYyC9gMKsJR6ET5/vEAAAADcPwRWzO1VSTp4OwRd+z8HvxKhkvEnvm8G5LxuD7JoCFgTdprilQryrd/ySp4Zr8MVhjw/dWjFwD0sBvMojhRT</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdQbYbh49gkyNXxEkDDE9IQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAZ3RVC0oSFdZN3uIlMUDr4eBtzNOUJosXZXqauu3/ElwAAAAAOgAAAAAIAACAAAAD8JvdPRQ8C+urG1jpBYK1TaCEUfiluWKCUxp64przULCAAAABb7OguQ36+x/eWkgd9GhAZ1ISNigWw4xmNe8XiBlO0G0AAAAD1eH4nByDKExANJ8LvPUnqOhdHITImVQCkrEt2nC7I1aWJ4n+bQ0+NXKeMjRuTwPic/ZjosEioW25xDHxsj9y3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{14C7ACE3-4631-45CD-B22A-24AEFA1EFDE3}"
+      DTS:DTSID="{7A4F5A93-58A9-4CB1-9218-C576DD3C9279}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -47,7 +47,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\RikkeiProject\SISMigrate\FileSource\DataCsv.csv">
+          DTS:ConnectionString="D:\DataMigrateSIS\FileSource\DataCsv.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,8 +55,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
-              DTS:ObjectName="ï»¿ID"
-              DTS:DTSID="{9B0CB0AE-C6A0-4C9E-949D-179A71A8E602}"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{2F278D7F-7DD6-4CD4-B3CF-EE055373CA65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{8B6307A9-78D5-4942-86CB-85A475E3BAF8}"
+              DTS:DTSID="{6AAB1F71-F48D-40D1-87C4-5F9B4F4BF26C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Address"
-              DTS:DTSID="{46AE528D-6636-4C40-90D9-3DD62EBE82AF}"
+              DTS:DTSID="{EC186342-970C-44B1-9C6D-ADEB94372B25}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{A28425FA-7215-4CD7-B096-459CDC9311C3}"
+              DTS:DTSID="{3D7C5CBE-175E-461D-9B30-9ABFEF398930}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Phone"
-              DTS:DTSID="{9F826A92-0374-478E-B337-8C15BE7972E6}"
+              DTS:DTSID="{EB9BA9DC-11D7-4194-9C27-280C32F121DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="mail"
-              DTS:DTSID="{673ECEC9-3F55-40AD-A8A1-B2BF3F78ECE9}"
+              DTS:DTSID="{A9003821-AC52-4BDB-9D42-47388F04CC7B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -114,7 +114,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{48E8BF1C-54B6-4255-8DF7-5B3F9966176F}"
+      DTS:DTSID="{EE583FF0-44FD-4F67-871E-E7DDFC1C842F}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -161,7 +161,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿ID]"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
                       length="50"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ID]"
                       name="ID"
@@ -291,11 +291,11 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿ID]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="ï»¿ID" />
+                      name="ID" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
                       codePage="1252"
@@ -335,7 +335,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
+                      codePage="65001"
                       dataType="text"
                       description="Flat File Source Error Output Column"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
@@ -395,7 +395,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">3</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -407,7 +407,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -454,14 +454,6 @@
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Address]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Address]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Phone"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[age]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -469,6 +461,14 @@
                       cachedName="age"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[age]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[age]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Phone]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[mail]"
                       cachedCodepage="1252"
@@ -499,17 +499,17 @@
                       length="50"
                       name="Address" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Phone" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[age]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="age" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mail]"
                       codePage="1252"
@@ -559,7 +559,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{29023BC3-4F89-474C-9BC0-9CE9435BC5DB}"
+      DTS:DTSID="{1084CB56-0884-427F-8D26-39DA65B137F6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -568,7 +568,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{CDC28A88-22C9-4A84-9B70-3F9A73462B3B}"
+          SQLTask:Connection="{82F5E672-2870-4616-9FA6-A3EF9F13D075}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE [User]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -577,7 +577,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{B5828E22-B9C3-497F-BBF6-2C0E050AA7A6}"
+      DTS:DTSID="{EAD31F83-D581-4191-A7A2-5D1D1B93DE8B}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -598,37 +598,25 @@
         <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
-          TopLeft="486,106" />
+          TopLeft="516,99" />
         <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
-          TopLeft="505,226" />
+          TopLeft="521,209" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="571,148">
+          TopLeft="599.75,141">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11.5,78"
+              EndConnector="0,68"
               Start="0,0"
-              End="11.5,70.5">
+              End="0,60.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35"
-                    Point2="0,39"
-                    Point3="4,39" />
-                  <mssgle:LineSegment
-                    End="7.5,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="7.5,39"
-                    Point2="11.5,39"
-                    Point3="11.5,43" />
-                  <mssgle:LineSegment
-                    End="11.5,70.5" />
+                    End="0,60.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -648,25 +636,25 @@
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="524.5,114.5" />
+          TopLeft="517,123" />
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="516,215" />
+          TopLeft="511,221" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="603.5,156.5">
+          TopLeft="597.25,165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,58.5"
+              EndConnector="0,56"
               Start="0,0"
-              End="0,51">
+              End="0,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51" />
+                    End="0,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
