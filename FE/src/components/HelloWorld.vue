@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Demo Upload CSV File</h1>
+    <h1>Demo Upload File CSV</h1>
     <input
       class="input-button"
       type="file"
@@ -22,6 +22,7 @@ export default {
   },
   methods: {
     handleFileUpload(event) {
+      this.message = "";
       this.file = event.target.files[0]; // Lấy file từ input
     },
     async uploadFile() {
