@@ -26,7 +26,7 @@ export default {
     },
     async uploadFile() {
       if (!this.file || !this.file.name.endsWith(".csv")) {
-        this.message = "Vui lòng chọn một file CSV.";
+        this.message = "Please select a CSV file.";
         return;
       }
 
@@ -40,12 +40,12 @@ export default {
         });
 
         if (response.ok) {
-          this.message = "File đã được upload thành công!";
+          this.message = "The file has been uploaded successfully!";
         } else {
-          this.message = "Có lỗi xảy ra khi upload file.";
+          this.message = "An error occurred while uploading the file.";
         }
       } catch (error) {
-        this.message = "Lỗi kết nối đến server.";
+        this.message = "Connection error to the server.";
         console.error(error);
       }
     },
