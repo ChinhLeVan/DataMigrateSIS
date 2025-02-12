@@ -22,6 +22,7 @@ export default {
   },
   methods: {
     handleFileUpload(event) {
+      this.message = "";
       this.file = event.target.files[0]; // Lấy file từ input
     },
     async uploadFile() {
