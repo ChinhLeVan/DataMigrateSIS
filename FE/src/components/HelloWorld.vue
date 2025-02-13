@@ -8,22 +8,66 @@
       accept=".csv"
     />
     <button class="button" @click="uploadFile">Upload</button>
+    <button class="button" @click="downloadData" v-if="tableData.length > 0">
+      Download file
+    </button>
     <p v-if="message">{{ message }}</p>
+
+    <table v-if="tableData.length > 0">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item, index) in tableData" :key="index">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.address }}</td>
+          <td>{{ item.age }}</td>
+          <td>{{ item.phone }}</td>
+          <td>{{ item.mail }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script>
+import * as XLSX from "xlsx";
+
 export default {
   data() {
     return {
       file: null,
       message: "",
+      tableData: [],
     };
   },
   methods: {
     handleFileUpload(event) {
       this.message = "";
-      this.file = event.target.files[0]; // Lấy file từ input
+      this.file = event.target.files[0];
+    },
+    async getData() {
+      try {
+        const response = await fetch(
+          "https://67ad5dae3f5a4e1477dd75b9.mockapi.io/api/v1/user"
+        );
+        if (response.ok) {
+          this.tableData = await response.json();
+        } else {
+          this.message = "Failed to fetch data.";
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        this.message = "Error fetching data.";
+      }
     },
     async uploadFile() {
       if (!this.file || !this.file.name.endsWith(".csv")) {
@@ -32,16 +76,17 @@ export default {
       }
 
       const formData = new FormData();
-      formData.append("file", this.file); // Thêm file vào FormData
+      formData.append("file", this.file);
 
       try {
-        const response = await fetch("http://10.1.50.85:8080/upload-file/csv", {
+        const response = await fetch("http://localhost:8080/upload-file/csv", {
           method: "POST",
           body: formData,
         });
 
         if (response.ok) {
           this.message = "The file has been uploaded successfully!";
+          await this.getData();
         } else {
           this.message = "An error occurred while uploading the file.";
         }
@@ -50,11 +95,33 @@ export default {
         console.error(error);
       }
     },
+    downloadData() {
+      if (this.tableData.length === 0) {
+        this.message = "No data available to download.";
+        return;
+      }
+
+      const headers = ["Id", "Name", "Address", "Age", "Phone", "Email"];
+
+      const cleanedData = this.tableData.map((item) => ({
+        Id: item.id,
+        Name: item.name,
+        Address: item.address,
+        Age: item.age,
+        Phone: item.phone,
+        Email: item.mail,
+      }));
+
+      const ws = XLSX.utils.json_to_sheet(cleanedData, { header: headers });
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+
+      XLSX.writeFile(wb, "tableData.xlsx");
+    },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;
@@ -120,5 +187,53 @@ a {
 .input-button:active {
   transform: scale(0.95);
   box-shadow: 0 3px 8px rgba(255, 77, 77, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: linear-gradient(135deg, #ff4d4d, #b30000);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(255, 77, 77, 0.2);
+}
+
+table tr:hover {
+  background-color: #f2f2f2;
+}
+
+table td {
+  background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+table td {
+  transition: background-color 0.3s ease;
+}
+
+table th,
+table td {
+  border-radius: 8px;
+}
+
+table td:hover {
+  background-color: #ffebeb;
 }
 </style>
