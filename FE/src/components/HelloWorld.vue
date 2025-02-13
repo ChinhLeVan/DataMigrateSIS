@@ -52,12 +52,13 @@ export default {
   methods: {
     handleFileUpload(event) {
       this.message = "";
+      this.tableData = [];
       this.file = event.target.files[0];
     },
     async getData() {
       try {
         const response = await fetch(
-          "https://67ad5dae3f5a4e1477dd75b9.mockapi.io/api/v1/user"
+          "http://localhost:8080/user/get-all"
         );
         if (response.ok) {
           this.tableData = await response.json();
