@@ -1,7 +1,7 @@
 package com.data.migrate.datamigratesis.controller;
 
-import com.data.migrate.datamigratesis.entity.User;
-import com.data.migrate.datamigratesis.repository.UserRepository;
+import com.data.migrate.datamigratesis.entity.Persion;
+import com.data.migrate.datamigratesis.repository.PersionRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,12 +20,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(origins = "*")
-public class UserController {
+public class PersionController {
     @Autowired
-    private UserRepository userRepository;
+    private PersionRepository persionRepository;
     @GetMapping("/get-all")
-    public ResponseEntity<List<User>> getAllUser() {
-        return ResponseEntity.ok(userRepository.findAll());
+    public ResponseEntity<List<Persion>> getAllPersion() {
+        return ResponseEntity.ok(persionRepository.findAll());
     }
 
 }

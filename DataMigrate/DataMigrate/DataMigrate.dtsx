@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="2/12/2025 4:27:37 PM"
+  DTS:CreationDate="2/14/2025 9:26:27 AM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="CHINHLV-D5"
   DTS:CreatorName="CHINHLV-D5\ChinhLV"
-  DTS:DTSID="{B0AE0F72-7005-48BF-B26C-F5CD825690AC}"
+  DTS:DTSID="{49D7803F-C204-4481-ADB8-E04190403A67}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5556.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="DataMigrate"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{FA7068E2-AD11-487F-8382-062ACFDA633B}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{4D406665-0E81-4CDC-863C-4DF2B859EEC1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.1.50.157.SYNC.sa]"
+      DTS:refId="Package.ConnectionManagers[10.1.50.157.SYNC.sa1]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{82F5E672-2870-4616-9FA6-A3EF9F13D075}"
-      DTS:ObjectName="10.1.50.157.SYNC.sa">
+      DTS:DTSID="{8390C8A3-4D36-467B-88D5-0D989B056BDB}"
+      DTS:ObjectName="10.1.50.157.SYNC.sa1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Application Name=SSIS-DataMigrate-{82F5E672-2870-4616-9FA6-A3EF9F13D075}10.1.50.157.SYNC.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-DataMigrate-{8390C8A3-4D36-467B-88D5-0D989B056BDB}10.1.50.157.SYNC.sa1;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdQbYbh49gkyNXxEkDDE9IQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAZ3RVC0oSFdZN3uIlMUDr4eBtzNOUJosXZXqauu3/ElwAAAAAOgAAAAAIAACAAAAD8JvdPRQ8C+urG1jpBYK1TaCEUfiluWKCUxp64przULCAAAABb7OguQ36+x/eWkgd9GhAZ1ISNigWw4xmNe8XiBlO0G0AAAAD1eH4nByDKExANJ8LvPUnqOhdHITImVQCkrEt2nC7I1aWJ4n+bQ0+NXKeMjRuTwPic/ZjosEioW25xDHxsj9y3</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{7A4F5A93-58A9-4CB1-9218-C576DD3C9279}"
+      DTS:DTSID="{CC32B1CF-C725-4FB9-85BE-AA298CFC2E98}"
       DTS:ObjectName="Flat File Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -47,7 +47,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\DataMigrateSIS\FileSource\DataCsv.csv">
+          DTS:ConnectionString="C:\FileSource\DataCsv.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{2F278D7F-7DD6-4CD4-B3CF-EE055373CA65}"
+              DTS:DTSID="{01BA6A5C-00C8-40D1-BF2A-6B4A887571CE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Name"
-              DTS:DTSID="{6AAB1F71-F48D-40D1-87C4-5F9B4F4BF26C}"
+              DTS:DTSID="{839BCEFC-F3AD-4783-BC61-67BD74F2FD90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -74,7 +74,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Address"
-              DTS:DTSID="{EC186342-970C-44B1-9C6D-ADEB94372B25}"
+              DTS:DTSID="{DB47D163-B1B1-40AF-9AA9-92808DB9769D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,7 +83,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="age"
-              DTS:DTSID="{3D7C5CBE-175E-461D-9B30-9ABFEF398930}"
+              DTS:DTSID="{0B595B4E-D02C-489C-A40C-E22E95ABD812}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -92,7 +92,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Phone"
-              DTS:DTSID="{EB9BA9DC-11D7-4194-9C27-280C32F121DD}"
+              DTS:DTSID="{6DD49714-81CB-479F-B2BE-5A5AA2FE6680}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -101,7 +101,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="mail"
-              DTS:DTSID="{A9003821-AC52-4BDB-9D42-47388F04CC7B}"
+              DTS:DTSID="{0F9ED347-711E-4925-85B6-D81081EDB4FE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -114,7 +114,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{EE583FF0-44FD-4F67-871E-E7DDFC1C842F}"
+      DTS:DTSID="{779B24EF-E15E-4A90-A5ED-FE4F09B6C1BF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -373,7 +373,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[user]</property>
+                  name="OpenRowset">[dbo].[persion]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -386,7 +386,7 @@
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
+                  name="DefaultCodePage">65001</property>
                 <property
                   dataType="System.Boolean"
                   description="Forces the use of the DefaultCodePage property value when describing character data."
@@ -395,7 +395,7 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">3</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
@@ -416,8 +416,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.1.50.157.SYNC.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.1.50.157.SYNC.sa]"
+                  connectionManagerID="Package.ConnectionManagers[10.1.50.157.SYNC.sa1]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.1.50.157.SYNC.sa1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -559,7 +559,7 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{1084CB56-0884-427F-8D26-39DA65B137F6}"
+      DTS:DTSID="{C30795BB-D5EA-4094-9A90-925C540EB91E}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -568,8 +568,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{82F5E672-2870-4616-9FA6-A3EF9F13D075}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [User]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{8390C8A3-4D36-467B-88D5-0D989B056BDB}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [persion]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -577,7 +577,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{EAD31F83-D581-4191-A7A2-5D1D1B93DE8B}"
+      DTS:DTSID="{A3AEF24F-20AB-4CC7-8B83-CD7EE8E512E4}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -596,27 +596,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="516,99" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
-          TopLeft="521,209" />
+          TopLeft="341,209" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="334,112" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="599.75,141">
+          TopLeft="418.75,154">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68"
+              EndConnector="0,55"
               Start="0,0"
-              End="0,60.5">
+              End="0,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5" />
+                    End="0,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -636,25 +636,25 @@
         <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="517,123" />
+          TopLeft="439,139" />
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="511,221" />
+          TopLeft="430,245" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="597.25,165">
+          TopLeft="517.75,181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="0,64"
               Start="0,0"
-              End="0,48.5">
+              End="0,56.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,56.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

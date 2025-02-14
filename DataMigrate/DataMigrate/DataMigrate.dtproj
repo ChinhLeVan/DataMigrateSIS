@@ -14,45 +14,45 @@
     <Manifest>
       <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
-          <SSIS:Property SSIS:Name="ID">{021f22ac-ec56-4382-a353-4cacbd91d9d2}</SSIS:Property>
+          <SSIS:Property SSIS:Name="ID">{4db63404-1c59-4621-89fb-c292d5013770}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">DataMigrate</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="CreationDate">2025-02-11T09:10:43.2520582+07:00</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreationDate">2025-02-14T09:26:27.2505372+07:00</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorName">CHINHLV-D5\ChinhLV</SSIS:Property>
           <SSIS:Property SSIS:Name="CreatorComputerName">CHINHLV-D5</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdQbYbh49gkyNXxEkDDE9IQAAAAACAAAAAAAQZgAAAAEAACAAAABwmRstlpUcMA2TR9BJqYz/XYu0WFXM65azDj13wMnXuAAAAAAOgAAAAAIAACAAAADQbM7z1lPaF3HaexyRRYJpeLwfdC0E/v2baLoojqn39ZAAAACIIS2HbM3xZrjp+fyr4E9HpHqoQQjGR4t4qf4rEEoHkHu3WXTFRADeESqG48lmapVN1bFveLGKVrBvosiEPOKFHxoBXm0JZ7ssus3eBMrU5MQvfiY+iPMKh5MzW0afDF+WCFTZbz+oYS5FxOl1e6NmLFd//eA1EIiCrkFLqbNmAH2nNzM4PXHc/kWK4aoRBWZAAAAAfSBupPF513GfhmVygSvvq2EziwPjsx7iY5U0MENxmTkDoP5/iymfVSaDGMU+Xf/fnBtITHg+bBb9I5nL0C1i1g==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdQbYbh49gkyNXxEkDDE9IQAAAAACAAAAAAAQZgAAAAEAACAAAABOdnp9hDZjYiNAoV0Ma/CUy/nHfxHetLisqXB8Ev5AiQAAAAAOgAAAAAIAACAAAAC1m367XKF5/h/2asd2bxp74ERUJvARIkixtMgzM95lmJAAAABhoQf/NfF4dFZ10EbdGAZlff9hgPKLPG9ap6RC/+xew985xU4qYh3Njv1kGB872yjNTCo1DLyNts4TdumotH4aRrxiQrwNlJ9tnZXdTlbe+Ca97OSBPgLNrrarntJtMzzzV+ET/7ZL0wZ5+Aem1mmXdiqe+iwjU61h4jvXDhoM9rTM17zPmXmvLt6ia+i5rr5AAAAALElBU/trq4p5NPnw8ktaHuO7S5Xjj/vm2ENFIhTMYSxB1/tfRJSXGBbOOuR/XkzIwg986Orp3kD2X/vEhFTn5w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="MigrateData.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="DataMigrate.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters />
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="MigrateData.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="DataMigrate.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{F5C86AB0-B45B-41B7-A306-E50344F204D5}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">MigrateData</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{49D7803F-C204-4481-ADB8-E04190403A67}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">DataMigrate</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{4FC3D2E5-B89F-4265-A772-C86EE18D653D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4D406665-0E81-4CDC-863C-4DF2B859EEC1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -78,11 +78,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Application Name=SSIS-MigrateData-{CDC28A88-22C9-4A84-9B70-3F9A73462B3B}10.1.50.157.SYNC.sa;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=10.1.50.157;User ID=sa;Initial Catalog=SYNC;Provider=MSOLEDBSQL.1;Persist Security Info=True;Application Name=SSIS-DataMigrate-{8390C8A3-4D36-467B-88D5-0D989B056BDB}10.1.50.157.SYNC.sa1;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -127,7 +127,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -142,7 +142,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.Password">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -156,7 +156,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -186,7 +186,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa.UserName">
+                <SSIS:Parameter SSIS:Name="CM.10.1.50.157.SYNC.sa1.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -272,7 +272,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\RikkeiProject\SISMigrate\FileSource\DataCsv.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\FileSource\DataCsv.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -425,7 +425,7 @@
           <ConfigurationSetting>
             <Id>LastModifiedTime</Id>
             <Name>LastModifiedTime</Name>
-            <Value xsi:type="xsd:dateTime">2025-02-11T02:47:32.3913773Z</Value>
+            <Value xsi:type="xsd:dateTime">2025-02-14T02:44:19.7955268Z</Value>
           </ConfigurationSetting>
         </ParameterConfigurationValues>
       </Options>

@@ -2,14 +2,14 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>DataMigrate</Name>
-    <LastWriteTime>2025-02-11T03:03:29.0276531Z</LastWriteTime>
+    <LastWriteTime>2025-02-14T03:15:07.2612369Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>MigrateData.dtsx</Name>
-      <LastWriteTime>2025-02-11T03:03:28.2053569Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+      <Name>DataMigrate.dtsx</Name>
+      <LastWriteTime>2025-02-14T03:15:06.7580604Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
 </BuildLog>

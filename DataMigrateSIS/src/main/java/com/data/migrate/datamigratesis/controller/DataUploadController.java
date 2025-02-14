@@ -21,8 +21,8 @@ import java.nio.file.Paths;
 @RequestMapping("/upload-file")
 @CrossOrigin(origins = "*")
 public class DataUploadController {
-    private static final String UPLOAD_DIR = "D:/DataMigrateSIS/FileSource/";
-    private static final String BATCH_FILE_PATH = "D:/DataMigrateSIS/Execute/RunPackage.bat";
+    private static final String UPLOAD_DIR = "C:/FileSource/";
+    private static final String BATCH_FILE_PATH = "C:/FileSource/RunPackage.bat";
     @PostMapping("/csv")
     public ResponseEntity<String> uploadCSV(@RequestParam("file") MultipartFile file) {
         if (file.isEmpty()) {
