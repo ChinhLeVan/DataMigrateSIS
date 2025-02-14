@@ -6,8 +6,10 @@
       type="file"
       @change="handleFileUpload"
       accept=".csv"
+      ref="fileInput"
     />
     <button class="button" @click="uploadFile">Upload</button>
+    <button class="button" @click="getData">Get Data</button>
     <button class="button" @click="downloadData" v-if="tableData.length > 0">
       Download file
     </button>
@@ -52,14 +54,15 @@ export default {
   methods: {
     handleFileUpload(event) {
       this.message = "";
-      this.tableData = [];
       this.file = event.target.files[0];
+      this.tableData = [];
+    },
+    resetFileInput() {
+      this.$refs.fileInput.value = null;
     },
     async getData() {
       try {
-        const response = await fetch(
-          "http://localhost:8080/user/get-all"
-        );
+        const response = await fetch("http://172.20.20.34:8085/user/get-all");
         if (response.ok) {
           this.tableData = await response.json();
         } else {
@@ -71,6 +74,7 @@ export default {
       }
     },
     async uploadFile() {
+      this.resetFileInput();
       if (!this.file || !this.file.name.endsWith(".csv")) {
         this.message = "Please select a CSV file.";
         return;
@@ -80,14 +84,17 @@ export default {
       formData.append("file", this.file);
 
       try {
-        const response = await fetch("http://localhost:8080/upload-file/csv", {
-          method: "POST",
-          body: formData,
-        });
+        const response = await fetch(
+          "http://172.20.20.34:8085/upload-file/csv",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
 
         if (response.ok) {
           this.message = "The file has been uploaded successfully!";
-          await this.getData();
+          this.file = null;
         } else {
           this.message = "An error occurred while uploading the file.";
         }

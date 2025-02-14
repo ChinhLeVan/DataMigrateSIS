@@ -1,7 +1,8 @@
 package com.data.migrate.datamigratesis.entity;
 
-import jakarta.persistence.*;
 import lombok.Data;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "persion")
